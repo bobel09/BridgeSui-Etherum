@@ -1,0 +1,178 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle, #121212, #1a1a1a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Wallet Sections */
+.wallet-section {
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.wallet-left {
+  left: 20px;
+}
+
+.wallet-right {
+  right: 20px;
+}
+
+/* Connect Wallet Button */
+.connect-wallet {
+  background: linear-gradient(145deg, #444, #555);
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.connect-wallet:hover {
+  background: linear-gradient(145deg, #555, #666);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.wallet-balance {
+  font-size: 14px;
+  color: #bbbbbb;
+  text-align: center;
+}
+
+/* Main App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #1c1c1c, #242424);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Header */
+h1 {
+  color: #e5e5e5;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(145deg, #ff3c68, #ff4d4d);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  margin: 12px 0;
+  box-shadow: 0 5px 10px rgba(255, 76, 76, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(145deg, #ff4d4d, #ff6161);
+  box-shadow: 0 8px 15px rgba(255, 76, 76, 0.7);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #ff3c68;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 60, 104, 0.5);
+}
+
+/* Status Container */
+.status-container {
+  margin-top: 20px;
+}
+
+.status-message {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-align: center;
+}
+
+footer a {
+  color: #ff3c68;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  .summary {
+    font-size: 14px;
+  }
+}
